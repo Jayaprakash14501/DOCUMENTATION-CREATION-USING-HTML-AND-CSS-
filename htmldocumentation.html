@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>htmldocumentation</title>
+<meta name="viewport"; content="width=device-width=initial-scale=1.0"/>
+<script src="https://kit.fontawesome.com/5d5acadfbe.js" crossorigin="anonymous"></script>
+<style>
+footer
+{
+background-color:black;
+color:white;
+}
+a:hover
+{
+color:blue;
+}
+h1:hover,h3:hover
+{
+background-color:purple;
+color:white;
+}
+p:hover
+{
+color:red;
+}
+.y
+{background-image:url("https://media.istockphoto.com/id/513247652/photo/panoramic-beautiful-view-of-mount-ama-dablam.jpg?s=1024x1024&w=is&k=20&c=ZKAEiIpjE9z6pmpZFVvnG_ymfsrZD7wFVPoB0LpLDYA=");
+height:500px;
+width:100%;
+}
+.x
+{
+text-align:center;
+font-size:100px;
+background-color:grey;
+position:middle;
+width=100%;
+height:500px;
+opacity:0.7;
+}
+fieldset
+{
+border-radius:20px;
+
+}
+ul li
+{
+list-style-type:none;
+
+}
+img
+{
+background-color:red;
+opacity:0.5;
+width:45%;
+height:45%;
+}
+ol
+{background-color:#EC9112;
+color:white;
+}
+a
+{
+color:white;
+}
+.m
+{
+border:1px solid black;
+border-collapse:collapse;
+background-color:#5F4C14;
+color:white;
+width:50%;
+}
+table,tr,td,th
+{
+border:1px solid black;
+border-collapse:collapse;
+padding:10px;
+
+}
+fieldset
+{
+width:100%;
+}
+th
+{
+background-color:#0D5F11;
+
+}
+td
+{
+background-color:#869E17;
+
+}
+p{
+text-indent:30px;
+}
+#navigation
+{
+float:left;
+width:20%;
+height:545px;
+border:1px solid black;
+background-color:#5D6C7B;
+position:fixed;
+}
+body{
+background-color:pink;
+color:black;
+}
+.darkmode
+{
+background-color:#1B1A18;
+color:white;
+}
+.a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.l
+{border:1px solid black;
+text-align:center;
+background-color:blue;
+padding:4%;
+}
+.a:hover,.b:hover,.c:hover,.d:hover,.e:hover,.f:hover,.g:hover,.h:hover,.i:hover,.j:hover,.k:hover,.l:hover
+{background-color:red;
+}
+
+
+td:hover
+{
+color:red;
+}
+.z
+{
+text-align:right;
+background-color:#7EA1C5;
+}
+i
+{
+margin:2%;
+}
+#course
+{
+float:right;
+width:77%;
+
+}
+a
+{
+text-decoration:none;
+}
+.fa-facebook
+{
+color:blue;
+background-color:white;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+}
+.fa-linkedin
+{
+color:blue;
+background-color:white;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+}
+
+.fa-instagram
+{
+color:black;
+background-color:orange;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+}
+.fa-image
+{
+color:blue;
+background-color:white;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+}
+.fa-phone
+{
+color:white;
+background-color:green;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+}
+.fa-user
+{
+color:blue;
+background-color:white;
+font-size:15px;
+padding:5px;
+border-radius:10%;
+
+}
+
+i:hover
+{
+opacity:0.6;
+color:black;
+}
+</style>
+</head>
+<body>
+<div id="navigation">
+<nav id="navbars">
+<center><h1>HTML<h1></center>
+<ul>
+<div class="a"><li><a class="nav-item" href="#introduction">INTRODUCTION</a></li></div>
+<div class="b"><li><a class="nav-item" href="#basicstructures">BASIC STRUCTURES</a></li></div>
+<div class="c"><li><a class="nav-item" href="#headingtags">HEADING TAGS</a></li></div>
+<div class="d"><li><a class="nav-item" href="#paragraphtags">PARAGRAPH TAGS</a></li></div>
+<div class="e"><li><a class="nav-item" href="#attributes">ATTRIBUTES</a></li></div>
+<div class="e"><li><a class="nav-item" href="#formatingtags">FORMATTING TAGS</a></li></div>
+<div class="f"><li><a class="nav-item" href="#videoandimage">VIDEO AND IMAGE TAGS</a></li></div>
+<div class="g"><li><a class="nav-item" href="#formtags ">FORM TAGS</a></li></div>
+<div class="h"><li><a class="nav-item" href="#tabletags">TABLE TAGS</a></li></div>
+<div class="i"><li><a class="nav-item" href="#linktags">LINK TAGS</a></li></div>
+<div class="j"><li><a class="nav-item" href="#listtags">LIST TAGS</a></li></div>
+<div class="k"><li><a class="nav-item" href="#additionaltags">ADDITIONAL TAGS</a></li></div>
+<div class="l"><li><a class="nav-item" href="#references">REFERENCES</a></li></div>
+</ul>
+</nav>
+</div>
+<div id="course">
+<div class="z">
+
+<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://web.whatsapp.com/"><i class="fa-solid fa-phone"></i></a>
+<a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+<a href="index.html"><i class="fa-solid fa-image"></i></a>
+<button onclick="webPage()">darkmode</button>
+
+<script>
+function webPage(){
+var a=document.body;
+a.classList.toggle("darkmode");
+}
+</script>
+
+</div><br><br>
+<div class="y"><div class="x">WELCOME,<br>I<br> AM<br> JAYAPRAKASH</div></div>
+<main id="nav-item">
+<section id="introduction">
+<fieldset><legend><h1>INTRODUCTION</h1></legend>
+<article>
+<p>HTML is a hypertext markup language. It is used to create a webpage using css and Javascript. HTML is a standard markup language for creating webpage
+It describes the structure of the webpage.HTML is the set of markup symbols or codes inserted into the file intended
+for display on the internet.</p><p>HTML describes the structure of web pages using markup.
+HTML elements are represented by tags.
+HTML tags, label pieces of content such as "heading", "paragraph", "table", and so on.
+Browsers do not display the html tags, but use them to tender the content of the page.</p>
+<p>HTML provides a way of displaying web pages with text and images or multimedia content. HTML is not a programming language. But a markup language.
+An HTML file is a text file containing small markup tags. The markup tags tell the web browsers, such as mozilla firefox and google chrome, how to display 
+the page.An HTML file must have an htm or html file extension.</p>
+
+
+<h3>HTML Tags:</h3>
+
+<p>HTML markup tags are usually called HTML tags.
+HTML tags are keywords surrounded by angle brackets.
+HTML tags normally come in pairs.
+The first tag in a pair is the start tag, the second tag is the end tag.
+start and end tags are also called opening tags and closing tags.<p>
+</article><hr>
+</section></fieldset>
+<section id="basicstructures">
+<fieldset><legend><h1>BASIC STRUCTURES</h1></legend>
+<article>
+<p>
+The two primary structural components in HTML are the body and the head. Both of these are used by all web
+ browsers to render the structure and setting of a webpage.</p>
+<div class="m"><pre><p>&lt;DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;/body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</p>
+</pre>
+</div>
+<p><pre>
+&lt;!DOCTYPE html&gt;--------------------->Tells version of HTML
+&lt;html&gt;------------------------------>HTML root element
+&lt;head&gt;------------------------------>Used to contain page HTML metadata
+&lt;title&gt;page title&lt;/title&gt;----->Title of HTML page
+&lt;/head&gt;
+&lt;body&gt;------------------------------>Hold content of HTML
+&lt;h2&gt;heading content&lt;h2&gt;------->HTML heading tag
+&lt;p&gt;paragraph content&lt;p&gt;------->HTML paragraph tag
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></p>
+</p><br>
+<h3>Example code with output:</h3>
+<img src="images/image1.png">
+</article>
+</section></fieldset>
+<section id="headingtags">
+<fieldset><legend><h1>HEADING TAGS</h1></legend>
+<article>
+<p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags. &lt;h1&gt; defines the most important heading. 
+&lt;h6&gt; defines a least important heading.
+They are six types of headings . they are,<pr>
+<p><ol>
+<li>&lt;h1&gt;</li>
+<li>&lt;h2&gt;</li>
+<li>&lt;h3&gt;</li>
+<li>&lt;h4&gt;</li>
+<li>&lt;h5&gt;</li>
+<li>&lt;h6&gt;</li>
+</ol></p>
+<p> It is used to create the various types of heading and it helps to choose needed size of heading.</p>
+<h3>Example code with output:</h3>
+<img src="images/image2.png">
+</article>
+</section></fieldset>
+
+<section id="paragraphtags">
+<fieldset><legend><h1>PARAGRAPH TAGS</h1></legend>
+<article>
+<p>
+The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers automatically
+ add some white space before and after a paragraph.
+</p>
+<h3>Example code with output:</h3>
+<img src="images/image1.png">
+</article>
+</section></fieldset>
+<section id="attributes">
+<fieldset><legend><h1>ATTRIBUTES</H1></legend>
+<article>
+<p>it helps to adjust the behaviour of the html file.<p>
+<ol>
+<li>table - bgcolor,width,height,rowspan,colspan,cellpadding</li>
+<li>form - method, action, onsubmit,onreset, target </li>
+<li>list - type</li>
+<li>link - rel, width, height, href, type, value</li>
+<li>p - style</li>
+<li>input - type, value, placeholder, required, size, maxlength, minlength</li>
+<li>img - width, height, alt, src</li>
+<li>video - autoplay, controls, width,height, muted</li>
+</ol>
+
+
+</article><hr>
+</section></fieldset>
+<section id="formatingtags">
+<fieldset><legend><h1>FORMATTING TAGS</h1></legend>
+<article>
+<p>
+Formatting tags helps to highlighting the words and added features to write text.</p>
+<h3>Special type of text:</h3>
+<p><ol>
+<dl>
+<li><dt>&lt;b&gt;</dt>
+<dd>-It helps to show boldly the text.</dd></li>
+<li><dt>&lt;strong&gt;</dt>
+<dd>-It helps to show the text with strong importance.</dd></li>
+<li><dt>&lt;i&gt;</dt>
+<dd>-It helps to change the italic style text.</dd></li>
+<li><dt>&lt;em&gt;</dt>
+<dd>-It helps to change the style of the text.</dd></li>
+<li><dt>&lt;br&gt;</dt>
+<dd>-It helps to break the sentence from current line.</dd></li>
+<li><dt>&lt;hr&gt;</dt>
+<dd>-It helps to add the horizontal line under the sentence.</dd></li>
+<li><dt>&lt;small&gt;</dt>
+<dd>-it helps to decrease the size of the text.</dd></li>
+<li><dt>&lt;mark&gt;</dt>
+<dd>-It helps to highlight the important text.</dd></li>
+<li><dt>&lt;del&gt;</dt>
+<dd>-It helps to striking the text.</dd></li>
+<li><dt>&lt;sup&gt;</dt>
+<dd>-It helps to write the power of the value of the text.</dd></li>
+<li><dt>&lt;sub&gt;</dt>
+<dd>-It helps to create the subscript text.</dd></li>
+<li><dt>&lt;ins&gt;</dt>
+<dd>-It helps to insert the text.</dd></li>
+</dl>
+</ol>
+</p>
+<h3>Example code:</h3>
+<img src="images/formatinginput.png">
+<h3>output:</h3>
+<img src="images/formatingoutput.png">
+</article>
+</section></fieldset>
+<section id="videoandimage">
+<fieldset><legend><h1>VIDEO AND IMAGE TAGS</H1></legend>
+<article>
+<h3>Video Tags</h3>
+<p>The video tag is used to add the video in creating websites.</p>
+<p>The &lt;video&gt; tag contains one or more &lt;source&gt; tags with different video sources. The browsers will choose the first source it supports.</p>
+<p>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</p>
+<table>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>It specifies the video will start playing automatically</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>It specifies the video controls will be displayed</td>
+</tr>
+<tr>
+<td>height</td>
+<td>It helps to set the height of the video</td>
+</tr>
+<tr>
+<td>width</td>
+<td>It helps to set the width of the video</td>
+</tr>
+<tr>
+<td>muted</td>
+<td>It helps to mute the video</td>
+</tr>
+</table>
+<h3>EXAMPLE CODE:</h3>
+<img src="images/videoinput.png"/>
+<h3>Audio Tags</h3>
+<p>The audio tag is used to add the audio in creating websites.</p>
+<p>The &lt;audio&gt; tag contains one or more &lt;source&gt; tags with different audio sources. The browsers will choose the first source it supports.</p>
+<p>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</p>
+<table>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>It specifies the audio will start playing automatically</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>It specifies the audio controls will be displayed</td>
+</tr>
+<tr>
+<td>muted</td>
+<td>It helps to mute the audio</td>
+</tr>
+</table>
+<h3>EXAMPLE CODE:</h3>
+<img src="images/audioinput.png"/>
+</article>
+<h3>Images</h3>
+<article>
+<p>It helps to add the images and fix the height and width</p>
+<table>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>alt</td>
+<td>It helps to set the alternate name before loading the image</td>
+</tr>
+<tr>
+<td>height</td>
+<td>It helps to set the height of the image</td>
+</tr>
+<tr>
+<td>width</td>
+<td>It helps to set the width of the image</td>
+</tr>
+</table>
+<h3>EXAMPLE CODE:</h3>
+<img src="images/imageinput.png"/><hr>
+</article>
+</section></fieldset>
+<section id="tabletags">
+<fieldset><legend><h1>TABLE TAGS TAGS</H1></legend>
+<article>
+<p>Table tag is helps to create the table with rows and coumns</p>
+<ol>
+<dl>
+<li><dt>&lt;th&gt;</dt>
+<dd>-defines the heading of the table</dd></li>
+<li><dt>&lt;tr&gt;</dt>
+<dd>-defines the row of the table</dd></li>
+<li><dt>&lt;td&gt;</dt>
+<dd>-defines the data of the table</dd></li>
+<li><dt>&lt;table&gt;</dt>
+<dd>-defines the table</dd></li>
+<li><dt>&lt;tfoot&gt;</dt>
+<dd>-group the footer content of the table</dd></li>
+<li><dt>&lt;thead&gt;</dt>
+<dd>-group the header content of the table</dd></li>
+<li><dt>&lt;tbody&gt;</dt>
+<dd>-group the body content of the table</dd></li>
+<li><dt>&lt;caption&gt;</dt>
+<dd>-it helps to write in center</dd></li>
+<li><dt>&lt;cellpadding&gt;</dt>
+<dd>-create the space inside the cell</dd></li>
+</dl>
+</ol><br>
+<table>
+<tr>
+<th>TAG</th>
+<th>ATTRIBUTES</th>
+<th>DESCRIPTION</th>
+</tr>
+<tr>
+<td rowspan="4">&lt;table&gt;</td>
+<td>&lt;table&gt;</td>
+<td>it helps to defines a table</td>
+</tr>
+<tr>
+<td>&lt;table border&gt;</td>
+<td>used to create the border for the table</td>
+</tr>
+<tr>
+<td>&lt;table color&gt;</td>
+<td>used to add the color in the table</td>
+</tr>
+<tr>
+<td>&lt;table align&gt;</td>
+<td>used to set the alignment for the table</td>
+</tr>
+<tr>
+<td rowspan="2">&lt;td&gt;,&lt;th&gt;,&lt;tr&gt;</td>
+<td>&lt;rowspan&gt;</td>
+<td>used to merge the two rows</td>
+</tr>
+<tr>
+<td>&lt;colspan&gt;</td>
+<td>used to merge the two columns</td>
+</tr>
+<tr>
+<td colspan="2">&lt;tfoot&gt;</td>
+<td>used to group the footer content of the table</td>
+</tr>
+<tr>
+<td colspan="2">&lt;thead&gt;</td>
+<td>used to group the header contebt of the table</td>
+</tr>
+<tr>
+<td colspan="2">&lt;body&gt;</td>
+<td>used to group the body content of the table</td>
+</tr>
+<tr>
+<td colspan="2">&lt;caption&gt;</td>
+<td>used to align center the text of the table content</td>
+</tr>
+<tr>
+<td colspan="2">&lt;cellpadding&gt;</td>
+<td>used to make space inside the cell</td>
+</tr>
+</table>
+</article><hr>
+</section>
+<h3>Example code:</h3>
+<img src="images/tableinput.png">
+<h3>output:</h3>
+<img src="images/tableoutput.png"></fieldset>
+<section id="linktags">
+<fieldset><legend><h1>LINK TAGS</h1></legend>
+<article>
+<p>Link tags are used to link the preloaded files or link other extension files with html.</p>
+<table>
+<tr>
+<th>attribute</th>
+<th>description</th>
+</tr>
+<tr>
+<td>&lt;href&gt;</td>
+<td>it helps to link the url of the document</td>
+</tr>
+<tr>
+<td>&lt;rel&gt;</td>
+<td>it helps to relate the current and linked documents</td>
+</tr>
+<tr>
+<td>&lt;type&gt;</td>
+<td>it helps to mention the type of file</td>
+</tr>
+<tr>
+<td>&lt;hreflang&gt;</td>
+<td>it helps to select the link language</td>
+</tr>
+<tr>
+<td>&lt;disabled&gt;</td>
+<td>it helps to disable the links</td>
+</tr>
+</table><hr>
+<h3>Example code:</h3>
+<img src="images/linkinput.png">
+<h3>output:</h3>
+<img src="images/linkoutput.png">
+</article>
+</section></fieldset>
+<section id="listtags">
+<fieldset><legend><h1>LIST TAGS</h1></legend>
+<article>
+<p>list tags are used to listed the data. there are three types, they are...
+</p>
+<ol>
+<li>ordered list</li>
+<li>unordered list</li>
+<li>distribution list</li>
+</ol>
+<table>
+<tr>
+<th>attributes</th>
+<th>description</th>
+<th>syntax</th>
+</tr>
+<tr>
+<td>&lt;dl&gt;</td>
+<td>it is used to create distribution list</td>
+<td><pre>&lt;dl&gt;
+&lt;dt&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;/dd&gt;
+&lt;/dl&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;li&gt;</td>
+<td>it is used to create the list</td>
+<td><pre>&lt;li&gt;&lt;/li&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>&lt;dt&gt;</td>
+<td>it defines term in a description list</td>
+<td><pre>&lt;dt&gt;&lt;/dt&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;dd&gt;</td>
+<td>it describes the term in a description list</td>
+<td><pre>&lt;dd&gt;&lt;/dd&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ol type="a"&gt;</td>
+<td>list is created by small alphabet</td>
+<td><pre>&lt;ol type="a"&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ol type="A"&gt;</td>
+<td>list is created by capital alphabet</td>
+<td><pre>&lt;ol type="A"&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;ol&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ol type="i"&gt;</td>
+<td>list is created by lower roman</td>
+<td><pre>&lt;ol type="i"&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ol type="I"&gt;</td>
+<td>list is created by upper roman</td>
+<td><pre>&lt;ol type="I"&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ul type="circle"&gt;</td>
+<td>it is used create the circular dot</td>
+<td><pre>&lt;ul type="circle"&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ul type="square"&gt;</td>
+<td>it is used to create the square dot</td>
+<td><pre>&lt;ul type="square"&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ul&gt;</td>
+<td>it is used create the unordered list</td>
+<td><pre>&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</pre></td>
+</tr>
+<tr>
+<td>&lt;ol&gt;</td>
+<td>it is used to create the ordered list</td>
+<td><pre>&lt;ol&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;ol&gt;</pre></td>
+</tr>
+</table>
+<h3>Example code:</h3>
+<img src="images/listinput.png">
+<h3>output:</h3>
+<img src="images/listoutput.png">
+</article><hr>
+</section></fieldset>
+<section id="formtags">
+<fieldset><legend><h1>FORM TAGS</H1></legend>
+<ARTICLE>
+<P>It is used to create forms. it has a lot of attributes, types and value and elements. it is very important topic in html</p>
+<table>
+<tr>
+<th>INPUT ATRIBUTES</th>
+<th>DESCRIPTION</th>
+<th>syntax</th>
+</tr>
+<tr>
+<td>type</td>
+<td>it is used to create input field</td>
+<td>&lt;input type="text"/&gt;</td>
+</tr>
+<tr>
+<td>value</td>
+<td>it is used to create the initial value of the input field</td>
+<td>&lt;input type="text" value=""/&gt;</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>it is used to allow readonly the input field</td>
+<td>&lt;input type="text" readonly/&gt;</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>it is used to disabled the editing option in the input field</td>
+<td>&lt;input type="text" disabled/&gt;</td>
+</tr>
+<tr>
+<td>size</td>
+<td>it is used to set the size of the input field</td>
+<td>&lt;input type="text" size/&gt;</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>it is used to set the maximum number of the characters allowed in the input field</td>
+<td>&lt;input type="text" maxlength/&gt;</td>
+</tr>
+<tr>
+<td>minlength</td>
+<td>it is used to set the minimum number of the characters allowed in the input field</td>
+<td>&lt;input type="text" minlength/&gt;</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>it is used to allows enter one more number of the files in the input field</td>
+<td>&lt;input type="text" multiple/&gt;</td>
+</tr>
+<tr>
+<td>list</td>
+<td>it is used to create the dropdown list</td>
+<td>&lt;input list="text"/&gt;</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>it is used to create the expected hint value of the input field</td>
+<td>&lt;input type="text" placeholder=text/&gt;</td>
+</tr>
+<tr>
+<td>required</td>
+<td>it is used to verifies input field is filled out before submission</td>
+<td>&lt;input type="text" required/&gt;</td>
+</tr>
+</table><br>
+<table>
+<tr>
+<th>attribute</th>
+<th>value</th>
+<th>description</th>
+<th>syntax</th>
+</tr>
+<tr>
+<td>method</td>
+<td>get</td>
+<td>it helps to send the data to url string</td>
+<td>&lt;form metod="get"&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td>method</td>
+<td>post</td>
+<td>it helps to send the data to server</td>
+<td>&lt;form method="post"&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td>target</td>
+<td>_blank</td>
+<td>it is used to load the response in new page</td>
+<td>&lt;form target="_blank"&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td>target</td>
+<td>_self</td>
+<td>it is used to load the response will display in current page only</td>
+<td>&lt;form target="_self"&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td colspan="2">action</td>
+<td>it is used to send the data to given url when submitted</td>
+<td>&lt;form&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td colspan="2">onsubmit</td>
+<td>it runs a script when submit button is clicked</td>
+<td>&lt;form onsubmit&gt;&lt;/form&gt;</td>
+</tr>
+<tr>
+<td colspan="2">onreset</td>
+<td>it runs a script when reset button is clicked</td>
+<td>&lt;form onreset&gt;&lt;/form&gt;</td>
+</tr>
+</table><br>
+<table>
+<tr>
+<th>input elements</th>
+<th>description</th>
+<th>syntax</th>
+</tr>
+<tr>
+<td>text</td>
+<td>it is used to create text field</td>
+<td>&lt;input type="text"/&gt;</td>
+</tr>
+<tr>
+<td>button</td>
+<td>it is used to create the button with click option</td>
+<td>&lt;input type="button"/&gt;</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>it is used to checkbox list</td>
+<td>&lt;input type="checkbox"/&gt;</td>
+</tr>
+<tr>
+<td>password</td>
+<td>it us used to create password based input field</td>
+<td>&lt;input type="password"/&gt;</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>it is used to create radio buttons</td>
+<td>&lt;input type="radio"/&gt;</td>
+</tr>
+<tr>
+<td>submit</td>
+<td>it is used to create the submit button</td>
+<td>&lt;input type="submit"/&gt;</td>
+</tr>
+<tr>
+<td>color</td>
+<td>it is used to create the color selector</td>
+<td>&lt;input type="color"/&gt;</td>
+</tr>
+<tr>
+<td>date</td>
+<td>it is used to create the date calender</td>
+<td>&lt;input type="date"/&gt;</td>
+</tr>
+<tr>
+<td>datetime-local</td>
+<td>it is used to create the both date and time available calender</td>
+<td>&lt;input type="datetime-local"/&gt;</td>
+</tr>
+<tr>
+<td>email</td>
+<td>it is used to create email based input field</td>
+<td>&lt;input type="email"/&gt;</td>
+</tr>
+<tr>
+<td>file</td>
+<td>it is used to create the file attach button</td>
+<td>&lt;input type="file"/&gt;</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>it is used to create hidden box</td>
+<td>&lt;input type="hidden"/&gt;</td>
+</tr>
+<tr>
+<td>image</td>
+<td>it is used to create the image attach button</td>
+<td>&lt;input type="image"/&gt;</td>
+</tr>
+<tr>
+<td>month</td>
+<td>it is used to create the month calender</td>
+<td>&lt;input type="month"/&gt;</td>
+</tr>
+<tr>
+<td>number</td>
+<td>it is used to create the number based input field</td>
+<td>&lt;input type="number"/&gt;</td>
+</tr>
+<tr>
+<td>tel</td>
+<td>it is used to create the phone number based input field</td>
+<td>&lt;input type="tel"/&gt;</td>
+</tr>
+<tr>
+<td>range</td>
+<td>it is used to create the range viewer</td>
+<td>&lt;input type="range"/&gt;</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>it is used to reset the form</td>
+<td>&lt;input type="reset"/&gt;</td>
+</tr>
+<tr>
+<td>search</td>
+<td>it is used to create the search bars</td>
+<td>&lt;input type="search"/&gt;</td>
+</tr>
+<tr>
+<td>time</td>
+<td>it is used to create the time</td>
+<td>&lt;input type="time"/&gt;</td>
+</tr>
+<tr>
+<td>url</td>
+<td>it is used to create the url input field</td>
+<td>&lt;input type="url"/&gt;</td>
+</tr>
+<tr>
+<td>week</td>
+<td>it is used to create the week calender</td>
+<td>&lt;input type="week"/&gt;</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>it is used to create the on/off based switch controller</td>
+<td>&lt;input type="switch"/&gt;</td>
+</tr>
+</table>
+<h3>Example code:</h3>
+<img src="images/forminput.png">
+<h3>output:</h3>
+<img src="images/formoutput.png">
+</article><hr>
+</section></fieldset>
+<section id="additionaltags">
+<fieldset><legend><h1>ADDITIONAL TAGS</h1></legend>
+<article>
+<p>we will see about 10 types of additional tags. they are...</p>
+<ol>
+<li>&lt;article&gt</li>
+<li>&lt;main&gt</li>
+<li>&lt;section&gt</li>
+<li>&lt;pre&gt</li>
+<li>&lt;meta&gt</li>
+<li>&lt;header&gt</li>
+<li>&lt;footer&gt</li>
+<li>&lt;nav&gt</li>
+<li>&lt;scriptd&gt</li>
+<li>&lt;link&gt</li>
+<li>&lt;span&gt</li>
+</ol>
+<ol>
+<dl>
+<li><dt>&lt;main&gt;</dt>
+<dd>-main tag is used to specifies the main content of the document. inside content of the main tag is helps to create unique content.
+ it helps to manage the full content of the document. <br>
+-<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;main id="a"&gt;
+&lt;section id="a"&gt;
+&lt;article&gt;
+&lt;p&gt;content&lt;/p&gt;
+&lt;/article&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;section&gt;</dt>
+<dd>-section tag is helps to work multiple process in same time. it helps to create the easily understandable code. 
+it split the multiple section in the main function. <br>
+-syntax:<pre>&lt;section id="a"&gt;
+&lt;article&gt;
+&lt;p&gt;content&lt;/p&gt;
+&lt;/article&gt;
+&lt;/section&gt;</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;nav&gt;</dt>
+<dd>-it helps to create the navigation bars and used to create controls of the all navigation bars.<br>
+-syntax:<pre>&lt;nav&gt;
+&lt;a href="filepath"&gt;&lt;/a&gt;
+&lt;/nav&gt;</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;article&gt;</dt>
+<dd>-it is used to create the article content. it helps to change the font style for search engines and to applies style easily.<br>
+-syntax:<pre>&lt;article&gt;
+&lt;p&gt;content&lt;/p&gt;
+&lt;/article&gt;</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;pre&gt;</dt>
+<dd>-it is used to create the tags in html.the tags are arranged in correct order.<br>
+-syntax:<pre>&lt;pre&gt;
+content
+&lt;/pre&gt;</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;meta&gt;</dt>
+<dd>-meta is used to manage the other language and explain to computer understanding languages. it is used to provide the authors name and
+ description in the html. it is used to set the page size and avoid the zoom option.<br>
+<h4>attributes:</h4>name, content, charset, viewport.< br>
+
+-syntax:<pre>&lt;meta charset="utf-8"&gt;&lt;meta name="a"; content="description";&gt;&lt;meta name="viewport" content="width=device-width,
+initial-scale=1.0"&gt;</pre></dd>
+</li></dl>
+<dl>
+<li><dt>&lt;script&gt;</dt>
+<dd>-script tag is used to create the javascript code and link the javascript code.<br>
+-syntax:<pre>&lt;script&gt;
+javascript content
+&lt;/script&gt;</pre></dd></li>
+</dl>
+<dl>
+<li><dt>&lt;link&gt;</dt>
+<dd>-it helps to link the another extension files and link the the preloaded files.<br>
+<h4>attributes:</h4>rel, type, href, hreflang, height, width.<br>
+-syntax:<pre>&lt;link rel="stylesheet" type="text/css" href="foldername/filename.css"&gt;</pre></dd>
+</li></dl>
+<dl>
+<li><dt>&lt;span&gt;</dt>
+<dd>-it is used to create the inline block container. it is used to create the section of the text without creating a new line of the content.</td>
+-syntax:<pre>&lt;span class="a"&gt;
+content
+&lt;/span&gt;</pre></dd>
+</li></dl>
+<dl>
+<li><dt>&lt;footer&gt;</dt>
+<dd>-it is used to create the footer of the main or section . it is used to insert the author's informations and details. <br>
+-syntax:<pre>&lt;footer&gt;
+end credits
+&lt;/footer&gt;</pre></dd>
+</li></dl>
+<dl>
+<li><dt>&lt;header&gt;</dt>
+<dd>-it is used to create the header of the main or section . it is used to insert the title and heading for main and section area.<br>
+-syntax:<pre>&lt;header&gt;
+headings
+&lt;/header&gt;</pre></dd>
+</li></dl></ol>
+</article>
+</section></fieldset>
+<section id="references">
+<fieldset><legend><h1>REFERENCES</h1></legend>
+<article>
+<p>
+This content is referred by:
+</p>
+<ol>
+<li><a href="https://www.w3schools.com/css/">css w3schools</a></li>
+<li><a href="https://www.w3schools.com/html/">html w3schools</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL734tn9B_Sr5mJibMwW0lZvVDUECOpaJ_">css youtube tutorial</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL734tn9B_Sr5BLnXbvjsyly-aueRC5ZwV">html youtube tutorial</a></li>
+<li><a href="https://html.com/about/">html.com</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HTML">html wikipedia</a></li>
+</ol>
+</article>
+</section></fieldset>
+</main>
+<footer>
+CREATED BY: JAYA PRAKASH I<br>
+GMAIL ID: irulappanprakash2001@gmail.com
+</footer>
+</div>
+</body>
+</html>
+
